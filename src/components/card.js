@@ -4,7 +4,7 @@ import Tag from "../components/tag"
 
 const Card = () => {
   return (
-    <div className="w-full h-full bg-white shadow-md pb-1 rounded-xl overflow-hidden">
+    <div className="w-full h-full bg-white shadow-md pb-1 rounded-xl">
       <StaticImage
         alt="Thumbnail"
         aspectRatio={2/1}
