@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "koheybase-v2",
+    siteUrl: "koheybase.com",
   },
   plugins: [
     "gatsby-plugin-image",
