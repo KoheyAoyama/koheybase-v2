@@ -4,17 +4,17 @@ import Tag from "../components/tag"
 
 const Card = () => {
   return (
-    <div className="w-full h-full bg-white shadow-md pb-1 rounded-xl">
+    <div className="w-full h-full bg-white shadow-md pb-1 rounded-xl overflow-hidden">
       <StaticImage
         alt="Thumbnail"
         aspectRatio={2/1}
-        className="rounded-t-xl"
+        //className="rounded-t-xl"
         src="../images/thumb-sample.jpeg"
       />
       <div className="p-3">
-      <p className="text-lg font-bold pb-2">ワークタイトル</p>
-      <Tag>UI/UXデザイン</Tag>
-      <Tag>UI/UXデザイン</Tag>
+        <p className="text-lg font-bold pb-2">ワークタイトル</p>
+        <Tag>UI/UXデザイン</Tag>
+        <Tag>UI/UXデザイン</Tag>
       </div>
     </div>
   )
