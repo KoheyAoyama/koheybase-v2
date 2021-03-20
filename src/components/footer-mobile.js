@@ -5,7 +5,7 @@ const FooterMobile = () => {
   return (
     <div>
       <div className="w-wondow h-72 pt-24 flex flex-col items-center">
-        <p className="text-2xl mb-6">🙌 話しかける</p>
+        <p className="text-2xl mb-6"><span role="img">🙌</span> 話しかける</p>
         <div className="flex">
           <span>
             <a

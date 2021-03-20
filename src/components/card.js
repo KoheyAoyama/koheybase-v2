@@ -1,14 +1,16 @@
 import React from 'react'
+import { StaticImage } from 'gatsby-plugin-image'
 import Tag from "../components/tag"
-import VariableImage from "../utils/variable-image"
-import thumbImg from "../images/thumb-sample.jpeg"
 
 const Card = () => {
   return (
     <div className="w-full h-full bg-white shadow-md pb-1 rounded-xl">
-      <VariableImage>
-        <img className="w-full h-full rounded-t-xl object-cover" src={thumbImg} />
-      </VariableImage>
+      <StaticImage
+        alt="Thumbnail"
+        aspectRatio={2/1}
+        className="rounded-t-xl"
+        src="../images/thumb-sample.jpeg"
+      />
       <div className="p-3">
       <p className="text-lg font-bold pb-2">ワークタイトル</p>
       <Tag>UI/UXデザイン</Tag>

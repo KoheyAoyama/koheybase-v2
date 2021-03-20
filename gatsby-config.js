@@ -32,6 +32,6 @@ module.exports = {
         labelFormat: `[local]`,
         cssPropOptimization: true,
       },
-    }
+    },
   ],
 };
