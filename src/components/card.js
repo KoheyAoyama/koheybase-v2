@@ -5,7 +5,7 @@ import VariableImage from "../utils/variable-image"
 
 const Card = () => {
   return (
-    <div className="w-full h-full bg-white shadow-md pb-2 rounded-xl">
+    <div className="w-full h-full bg-white shadow-md pb-1 rounded-xl">
       <VariableImage>
       <StaticImage className="w-full h-full rounded-t-xl" src="../images/thumb-sample.jpeg" />
       </VariableImage>

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react"
+import { Link } from "gatsby"
+import { urlFacebook, urlGitHub } from "../utils/constants"
 
-const GlobalMenu = () => {
+const GlobalMenuMobile = () => {
 
   const [state, setState] = useState(false)
 
@@ -14,7 +16,6 @@ const GlobalMenu = () => {
     }
   },[state])
 
-  //
   return (
     <div className="fixed bottom-8 right-4 flex flex-col items-end">
       <div className="w-44 py-4 mb-6 shadow-xl rounded bg-white hidden" id="js-visibility-control">
@@ -26,20 +27,24 @@ const GlobalMenu = () => {
               href="/">Home</a>
             </li>
             <li className="w-full">
-              <a
-              href="/"
+              <Link
+              to="/about-me/"
               className="inline-block w-full h-12 px-6 flex items-center"
-              >About Me</a>
+              >About Me</Link>
             </li>
             <li className="w-full">
               <a
-              href="/"
+              href={urlFacebook}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block w-full h-12 px-6 flex items-center"
               >Facebook</a>
             </li>
             <li className="w-full">
               <a
-              href="/"
+              href={urlGitHub}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block w-full h-12 px-6 flex items-center"
               >Github</a>
             </li>
@@ -59,4 +64,4 @@ const GlobalMenu = () => {
   )
 }
 
-export default GlobalMenu
+export default GlobalMenuMobile
