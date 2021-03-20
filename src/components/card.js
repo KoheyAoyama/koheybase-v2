@@ -3,6 +3,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Tag from "../components/tag"
 
 const Card = () => {
+
   return (
     <div className="w-full h-full bg-white shadow-md pb-1 rounded-xl">
       <StaticImage
@@ -10,6 +11,7 @@ const Card = () => {
         aspectRatio={2/1}
         className="rounded-t-xl overflow-hidden"
         imgClassName="rounded-t-xl overflow-hidden"
+        imgStyle={{borderTopLeftRadius: '0.75rem',borderTopRightRadius: '0.75rem'}}
         src="../images/thumb-sample.jpeg"
       />
       <div className="p-3">
