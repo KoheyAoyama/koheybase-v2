@@ -8,7 +8,8 @@ const Card = () => {
       <StaticImage
         alt="Thumbnail"
         aspectRatio={2/1}
-        //className="rounded-t-xl"
+        className="rounded-t-xl overflow-hidden"
+        imgClassName="rounded-t-xl overflow-hidden"
         src="../images/thumb-sample.jpeg"
       />
       <div className="p-3">
