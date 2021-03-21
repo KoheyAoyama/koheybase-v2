@@ -19,35 +19,47 @@ const GlobalMenuMobile = () => {
 
       {// Popup menu
       }
-      <div className="w-44 py-4 mb-6 shadow-xl rounded bg-white hidden" id="js-visibility-control">
+      <div className="w-56 py-2 mb-6 shadow-xl rounded bg-white hidden" id="js-visibility-control">
         <nav>
           <ul>
             <li className="w-full">
               <a
-              className="inline-block w-full h-12 px-6 flex items-center"
-              href="/">Home</a>
+              className="inline-block w-full h-16 px-3 flex items-center"
+              href="/">
+                <span className="w-10 mr-3 flex justify-center" style={{ fontSize: '24px' }}><i class="fas fa-home"></i></span>
+                Home
+              </a>
             </li>
             <li className="w-full">
               <Link
               to="/about-me/"
-              className="inline-block w-full h-12 px-6 flex items-center"
-              >About Me</Link>
+              className="inline-block w-full h-16 px-3 flex items-center"
+              >
+                <span className="w-10 mr-3 flex justify-center" style={{ fontSize: '24px' }}><i class="fas fa-user"></i></span>
+                About Me
+              </Link>
             </li>
             <li className="w-full">
               <a
               href={urlFacebook}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block w-full h-12 px-6 flex items-center"
-              >Facebook</a>
+              className="inline-block w-full h-16 px-3 flex items-center"
+              >
+                <span className="w-10 mr-3 flex justify-center" style={{ fontSize: '24px' }}><i class="fab fa-facebook"></i></span>
+                Facebook
+              </a>
             </li>
             <li className="w-full">
               <a
               href={urlGitHub}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block w-full h-12 px-6 flex items-center"
-              >Github</a>
+              className="inline-block w-full h-16 px-3 flex items-center"
+              >
+                <span className="w-10 mr-3 flex justify-center" style={{ fontSize: '24px' }}><i class="fab fa-github"></i></span>
+                Github
+              </a>
             </li>
           </ul>
         </nav>
