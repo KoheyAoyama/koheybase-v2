@@ -8,16 +8,15 @@ const GlobalMenuMobile = () => {
 
   useEffect(()=>{
     const menuBox = document.getElementById('js-visibility-control')
+    state ? menuBox.classList.remove('hidden') : menuBox.classList.add('hidden')
 
-    if (state) {
-      menuBox.classList.remove('hidden')
-    } else {
-      menuBox.classList.add('hidden')
-    }
   },[state])
 
   return (
     <div className="fixed bottom-8 right-4 flex flex-col items-end">
+
+      {// Popup menu
+      }
       <div className="w-44 py-4 mb-6 shadow-xl rounded bg-white hidden" id="js-visibility-control">
         <nav>
           <ul>
@@ -51,14 +50,21 @@ const GlobalMenuMobile = () => {
           </ul>
         </nav>
       </div>
-      <div
+
+      {// Floagin action button
+      }
+      <button
         className="w-16 h-16 bg-black rounded-full flex justify-center items-center"
         onClick={()=> {
           setState(!state)
         }}
       >
-        <div className="w-8 h-8 bg-red-500"></div>
-      </div>
+        <div className="flex flex-col justify-between h-6 w-8">
+          <span className="inline-block h-px w-full bg-white" id="js-menu-bar-1"></span>
+          <span className="inline-block h-px w-full bg-white" id="js-menu-bar-2"></span>
+          <span className="inline-block h-px w-full bg-white" id="js-menu-bar-3"></span>
+        </div>
+      </button>
     </div>
 
   )
