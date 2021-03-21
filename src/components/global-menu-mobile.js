@@ -10,6 +10,8 @@ const GlobalMenuMobile = () => {
     const menuBox = document.getElementById('js-visibility-control')
     state ? menuBox.classList.remove('hidden') : menuBox.classList.add('hidden')
 
+    const fabIcon = document.getElementById('js-fab-icon')
+    state ? fabIcon.innerHTML = 'clear' : fabIcon.innerHTML = 'notes'
   },[state])
 
   return (
@@ -54,16 +56,12 @@ const GlobalMenuMobile = () => {
       {// Floagin action button
       }
       <button
-        className="w-16 h-16 bg-black rounded-full flex justify-center items-center"
+        className="w-16 h-16 bg-black rounded-full flex justify-center items-center shadow-2xl"
         onClick={()=> {
           setState(!state)
         }}
       >
-        <div className="flex flex-col justify-between h-6 w-8">
-          <span className="inline-block h-px w-full bg-white" id="js-menu-bar-1"></span>
-          <span className="inline-block h-px w-full bg-white" id="js-menu-bar-2"></span>
-          <span className="inline-block h-px w-full bg-white" id="js-menu-bar-3"></span>
-        </div>
+        <span className="material-icons text-white" style={{ fontSize: '36px' }} id="js-fab-icon">menu</span>
       </button>
     </div>
 
