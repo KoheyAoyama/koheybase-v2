@@ -1,8 +1,9 @@
 import React from "react"
+import { graphql } from "gatsby"
 import Scaffold from "../components/scaffold"
 import Card from "../components/card"
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
   return (
     <Scaffold>
       <div className="w-screen flex flex-col">
@@ -13,18 +14,32 @@ const IndexPage = () => {
 
         <div className="
           md:grid md:grid-cols-3 md:grid-flow-row md:gap-4 md:px-4
-          ">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-
+        ">
+          {data.allContentfulWorks.edges.map(({ node }, index) => (
+            <Card key={index} data={node} />
+          ))}
         </div>
-
       </div>
     </Scaffold>
   )
 }
+
+export const query = graphql`
+query indexPageQuery {
+  allContentfulWorks(filter: {node_locale: {eq: "ja"}}) {
+    edges {
+      node {
+        id
+        title
+        genre
+        period
+        thumbnail {
+          gatsbyImageData
+        }
+      }
+    }
+  }
+}
+`
 
 export default IndexPage

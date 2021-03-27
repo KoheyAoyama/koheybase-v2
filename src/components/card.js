@@ -1,23 +1,26 @@
 import React from 'react'
-import { StaticImage } from 'gatsby-plugin-image'
+import { Link } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Tag from "../components/tag"
 
-const Card = () => {
-
+const Card = ({ data }) => {
+  const thumbnail = getImage(data.thumbnail)
   return (
-    <div className="w-full h-full bg-white pb-10">
-      <StaticImage
-        alt="Thumbnail"
-        aspectRatio={2/1}
-        //imgStyle={{borderTopLeftRadius: '0.75rem',borderTopRightRadius: '0.75rem'}}
-        src="../images/thumb-sample.jpeg"
-      />
-      <div className="px-3">
-        <p className="text-lg font-bold">ワークタイトル</p>
-        <Tag>UI/UXデザイン</Tag>
-        <Tag>UI/UXデザイン</Tag>
+    <Link to={`/works/${data.id}`}>
+      <div className="w-full h-full bg-white pb-10">
+        <GatsbyImage
+          alt="Thumbnail"
+          image={thumbnail}
+          className="hover:shadow-lg"
+        />
+        <div className="px-3">
+          <p className="text-lg font-bold">{data.title}</p>
+          {data.genre.map((genre, index) => (
+            <Tag key={index}>{genre}</Tag>
+          ))}
+        </div>
       </div>
-    </div>
+    </Link>
   )
 }
 
