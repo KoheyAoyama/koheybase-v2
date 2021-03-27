@@ -5,15 +5,15 @@ import Tag from "../components/tag"
 const Card = () => {
 
   return (
-    <div className="w-full h-full bg-white shadow-md pb-1 rounded-xl">
+    <div className="w-full h-full bg-white pb-6">
       <StaticImage
         alt="Thumbnail"
         aspectRatio={2/1}
-        imgStyle={{borderTopLeftRadius: '0.75rem',borderTopRightRadius: '0.75rem'}}
+        //imgStyle={{borderTopLeftRadius: '0.75rem',borderTopRightRadius: '0.75rem'}}
         src="../images/thumb-sample.jpeg"
       />
-      <div className="p-3">
-        <p className="text-lg font-bold pb-2">ワークタイトル</p>
+      <div className="px-3 ">
+        <p className="text-lg font-bold">ワークタイトル</p>
         <Tag>UI/UXデザイン</Tag>
         <Tag>UI/UXデザイン</Tag>
       </div>
