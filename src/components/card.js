@@ -5,11 +5,11 @@ import Tag from "../components/tag"
 const Card = () => {
 
   return (
-    <div className="w-full h-full bg-white shadow-md pb-1 rounded-xl">
+    <div className="w-full h-full bg-white pb-1">
       <StaticImage
         alt="Thumbnail"
         aspectRatio={2/1}
-        imgStyle={{borderTopLeftRadius: '0.75rem',borderTopRightRadius: '0.75rem'}}
+        //imgStyle={{borderTopLeftRadius: '0.75rem',borderTopRightRadius: '0.75rem'}}
         src="../images/thumb-sample.jpeg"
       />
       <div className="p-3">
