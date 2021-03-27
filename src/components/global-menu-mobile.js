@@ -15,7 +15,10 @@ const GlobalMenuMobile = () => {
   },[state])
 
   return (
-    <div className="fixed bottom-8 right-4 flex flex-col items-end">
+    <div className="
+      fixed bottom-8 right-4 flex flex-col items-end
+      md:hidden
+    ">
 
       {// Popup menu
       }
