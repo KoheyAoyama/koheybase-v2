@@ -1,11 +1,11 @@
 import React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
-import ScaffoldMobile from '../components/scaffold-mobile'
+import Scaffold from '../components/scaffold'
 import Tag from '../components/tag'
 
 const AboutMe = () => {
   return (
-    <ScaffoldMobile>
+    <Scaffold>
       <div className="w-screen px-4 flex flex-col space-y-4"></div>
 
       <StaticImage className="w-full my-6" src="../images/img-my-profile.png" />
@@ -43,7 +43,7 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-    </ScaffoldMobile>
+    </Scaffold>
   )
 }
 

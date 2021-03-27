@@ -1,10 +1,10 @@
 import React from 'react'
-import Head from '../components/head'
-import GlobalMenuMobile from "../components/global-menu-mobile"
-import HeaderMobile from "../components/header-mobile"
+import Head from './head'
+import GlobalMenuMobile from "./global-menu-mobile"
+import HeaderMobile from "./header-mobile"
 import FooterMobile from './footer-mobile'
 
-const ScaffoldMobile = ({children}) => {
+const Scaffold = ({children}) => {
   return (
     <div>
       <Head />
@@ -20,4 +20,4 @@ const ScaffoldMobile = ({children}) => {
   )
 }
 
-export default ScaffoldMobile
+export default Scaffold

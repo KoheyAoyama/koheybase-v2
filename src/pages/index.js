@@ -1,12 +1,12 @@
 import React from "react"
-import ScaffoldMobile from "../components/scaffold-mobile"
+import Scaffold from "../components/scaffold"
 import Card from "../components/card"
 
 const IndexPage = () => {
   return (
-    <ScaffoldMobile>
+    <Scaffold>
       <div className="w-screen flex flex-col">
-        <div className="mb-12 px-4">
+        <div className="mb-10 px-4">
           <p>青山広平</p>
           <p>東京を拠点とするデジタルプロダクトデザイナー</p>
         </div>
@@ -23,7 +23,7 @@ const IndexPage = () => {
         </div>
 
       </div>
-    </ScaffoldMobile>
+    </Scaffold>
   )
 }
 
