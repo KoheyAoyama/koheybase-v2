@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from './head'
 import GlobalMenuMobile from "./global-menu-mobile"
-import HeaderMobile from "./header-mobile"
+import Header from "./header"
 import FooterMobile from './footer-mobile'
 
 const Scaffold = ({children}) => {
@@ -10,7 +10,7 @@ const Scaffold = ({children}) => {
       <Head />
 
       <main static>
-        <HeaderMobile />
+        <Header />
           <div className="h-24"></div>
           {children}
         <GlobalMenuMobile />
