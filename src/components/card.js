@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import {GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Tag from "../components/tag"
 
 const Card = ({ data }) => {

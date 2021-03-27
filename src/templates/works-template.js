@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import { css } from "@emotion/react"
 import { BLOCKS } from '@contentful/rich-text-types'
 import { renderRichText } from 'gatsby-source-contentful/rich-text'
@@ -7,10 +8,16 @@ import Scaffold from "../components/scaffold"
 
 const Article = props => {
     const content = props.data.contentfulWorks
+    const thumbnail = getImage(content.thumbnail)
     return (
       <Scaffold>
         <div className="md:max-w-2xl m-auto">
-          <div>{content.title}</div>
+          <GatsbyImage
+            alt="Thumbnail"
+            image={thumbnail}
+            className="md:mx-4"
+          />
+          <h1 className="px-4 py-8 text-3xl">{content.title}</h1>
           {renderRichText(content.content, options)}
         </div>
       </Scaffold>
@@ -114,6 +121,17 @@ const options = {
         </blockquote>
       )
     },
+    [BLOCKS.EMBEDDED_ASSET]: node => {
+      return (
+        <div>
+          <GatsbyImage
+            alt="Thumbnail"
+            image={getImage(node.data.target)}
+            className="md:mx-4"
+          />
+        </div>
+      )
+    },
   }
 }
 
@@ -128,6 +146,16 @@ export const query = graphql`
       }
       content {
         raw
+        references {
+          ... on ContentfulAsset {
+            __typename
+            contentful_id
+            gatsbyImageData
+            file {
+              url
+            }
+          }
+        }
       }
     }
   }

@@ -38,6 +38,7 @@ module.exports = {
       options: {
         spaceId: `4sms7cgnp9oh`,
         accessToken: `ciwJzSwCciRkCMuFP82TGw3gBLaGInYDsPkZZ5w8mCo`,
+        downloadLocal: true,
       },
     },
   ],
