@@ -1,2 +1,2 @@
-export const urlFacebook = "https://www.facebook.com/kohei5342"
+export const urlFacebook = "https://m.me/kohei5342"
 export const urlGitHub = "https://github.com/KoheyAoyama"

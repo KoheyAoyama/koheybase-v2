@@ -46,8 +46,8 @@ const GlobalMenuMobile = () => {
               rel="noopener noreferrer"
               className="inline-block w-full h-16 px-3 flex items-center"
               >
-                <span className="w-10 mr-3 flex justify-center" style={{ fontSize: '24px' }}><i class="fab fa-facebook"></i></span>
-                Facebook
+                <span className="w-10 mr-3 flex justify-center" style={{ fontSize: '24px' }}><i class="fab fa-facebook-messenger"></i></span>
+                Messenger
               </a>
             </li>
             <li className="w-full">
