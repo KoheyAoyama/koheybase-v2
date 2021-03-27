@@ -16,7 +16,7 @@ const FooterMobile = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block w-full h-12 px-6 flex items-center"
-            >Facebook</a>
+            >Messenger</a>
           </span>
           <span>
             <a
