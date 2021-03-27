@@ -12,19 +12,23 @@ const FooterMobile = () => {
         <div className="flex">
           <span>
             <a
-            href={urlFacebook}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block w-full h-12 px-6 flex items-center"
-            >Messenger</a>
+              href={urlFacebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-5 flex items-center"
+              >
+                <span style={{ fontSize: '44px' }}><i class="fab fa-facebook-messenger"></i></span>
+            </a>
           </span>
           <span>
             <a
-            href={urlGitHub}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block w-full h-12 px-6 flex items-center"
-            >Github</a>
+              href={urlGitHub}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-5 flex items-center"
+              >
+                <span style={{ fontSize: '44px' }}><i class="fab fa-github"></i></span>
+            </a>
           </span>
         </div>
       </div>
