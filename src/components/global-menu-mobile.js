@@ -68,7 +68,7 @@ const GlobalMenuMobile = () => {
       {// Floagin action button
       }
       <button
-        className="w-16 h-16 bg-black rounded-full flex justify-center items-center shadow-2xl focus:appearance-none"
+        className="w-16 h-16 bg-black rounded-full flex justify-center items-center shadow-2xl focus:outline-none"
         onClick={()=> {
           setState(!state)
         }}
