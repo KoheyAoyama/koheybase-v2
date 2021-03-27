@@ -12,10 +12,10 @@ const HeaderMobile = () => {
         <h1 className="text-4xl font-extrabold antialiased">Koheybase</h1>
 
         <nav className="hidden md:block">
-          <ul className="flex ml-8">
+          <ul className="flex ml-6">
             <li>
               <a
-              className="inline-block h-10 px-3 flex items-center"
+              className="inline-block h-9 px-3 flex items-center"
               href="/">
                 Home
               </a>
@@ -23,7 +23,7 @@ const HeaderMobile = () => {
             <li>
               <Link
               to="/about-me/"
-              className="inline-block h-10 px-3 flex items-center"
+              className="inline-block h-9 px-3 flex items-center"
               >
                 About Me
               </Link>
@@ -33,7 +33,7 @@ const HeaderMobile = () => {
               href={urlFacebook}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block h-10 px-3 flex items-center"
+              className="inline-block h-9 px-3 flex items-center"
               >
                 <span style={{ fontSize: '20px' }}><i class="fab fa-facebook-messenger"></i></span>
               </a>
@@ -43,7 +43,7 @@ const HeaderMobile = () => {
               href={urlGitHub}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block h-10 px-3 flex items-center"
+              className="inline-block h-9 px-3 flex items-center"
               >
                 <span style={{ fontSize: '20px' }}><i class="fab fa-github"></i></span>
               </a>
