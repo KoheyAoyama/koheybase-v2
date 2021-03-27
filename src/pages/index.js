@@ -8,7 +8,7 @@ const IndexPage = () => {
       <div className="w-screen flex flex-col">
         <div className="mb-10 px-4">
           <p>青山広平</p>
-          <p>東京を拠点とするデジタルプロダクトデザイナー</p>
+          <p>東京を拠点とするUIデザイナー</p>
         </div>
 
         <div className="
