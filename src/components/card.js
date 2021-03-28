@@ -11,7 +11,7 @@ const Card = ({ data }) => {
         <GatsbyImage
           alt="Thumbnail"
           image={thumbnail}
-          className="hover:shadow-lg"
+          className="md:hover:shadow-lg"
         />
         <div className="px-3">
           <p className="text-lg font-bold">{data.title}</p>
