@@ -5,6 +5,7 @@ import { css } from "@emotion/react"
 import { BLOCKS } from '@contentful/rich-text-types'
 import { renderRichText } from 'gatsby-source-contentful/rich-text'
 import Scaffold from "../components/scaffold"
+import Tag from '../components/tag'
 
 const Article = props => {
     const content = props.data.contentfulWorks
@@ -17,7 +18,13 @@ const Article = props => {
             image={thumbnail}
             className="md:mx-4"
           />
-          <h1 className="px-4 py-8 text-3xl">{content.title}</h1>
+          <div className="px-4 my-6">
+            <p className="font-bold mb-2">{content.period}</p>
+            <h1 className="pb-2 text-3xl">{content.title}</h1>
+            {content.genre.map((genre, index) => (
+              <Tag key={index}>{genre}</Tag>
+            ))}
+          </div>
           {renderRichText(content.content, options)}
         </div>
       </Scaffold>
@@ -140,7 +147,7 @@ export const query = graphql`
     contentfulWorks(id: {eq: $id}) {
       title
       genre
-      period
+      period(formatString: "y")
       thumbnail {
         gatsbyImageData
       }
