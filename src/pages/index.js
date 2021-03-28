@@ -28,13 +28,16 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
 query indexPageQuery {
-  allContentfulWorks(filter: {node_locale: {eq: "ja"}}) {
+  allContentfulWorks(
+    filter: {node_locale: {eq: "ja"}}
+    sort: {fields: period, order: DESC}
+  ) {
     edges {
       node {
         id
         title
-        genre
         period
+        genre
         thumbnail {
           gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH, aspectRatio: 2.0)
         }
