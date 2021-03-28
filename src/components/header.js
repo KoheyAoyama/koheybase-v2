@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'gatsby'
+import { Link } from 'gatsby'
 import { urlFacebook, urlGitHub } from "../utils/constants"
 
 const HeaderMobile = () => {
@@ -9,16 +9,18 @@ const HeaderMobile = () => {
 
     ">
       <div className="h-full flex items-end flex-grow">
-        <h1 className="text-4xl font-extrabold antialiased">Koheybase</h1>
+        <h1 className="text-4xl font-extrabold antialiased">
+          <Link to="/">Koheybase</Link>
+        </h1>
 
         <nav className="hidden md:block">
           <ul className="flex ml-5">
             <li>
-              <a
+              <Link
               className="inline-block h-9 px-4 flex items-center"
-              href="/">
+              to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
               <Link
