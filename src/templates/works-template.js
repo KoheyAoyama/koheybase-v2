@@ -19,7 +19,7 @@ const Article = props => {
             className="md:mx-4"
           />
           <div className="px-4 my-6">
-            <p className="text-xl font-normal text-gray-400">{content.period}</p>
+            <p className="text-xl font-normal text-gray-400 mb-1">{content.period}</p>
             <h1 className="pb-2 text-3xl font-bold">{content.title}</h1>
             <div className="mt-3">
               {content.genre.map((genre, index) => (
