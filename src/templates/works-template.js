@@ -19,13 +19,15 @@ const Article = props => {
             className="md:mx-4"
           />
           <div className="px-4 my-6">
-            <p className="font-bold mb-2">{content.period}</p>
-            <h1 className="pb-2 text-3xl">{content.title}</h1>
-            {content.genre.map((genre, index) => (
-              <span className="mr-2 mb-1">
-                <Tag key={index}>{genre}</Tag>
-              </span>
-            ))}
+            <p className="text-xl font-normal text-gray-400">{content.period}</p>
+            <h1 className="pb-2 text-3xl font-bold">{content.title}</h1>
+            <div className="mt-3">
+              {content.genre.map((genre, index) => (
+                <span className="mr-2 mb-1">
+                  <Tag key={index}>{genre}</Tag>
+                </span>
+              ))}
+            </div>
           </div>
           {renderRichText(content.content, options)}
         </div>
