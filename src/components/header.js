@@ -9,7 +9,7 @@ const HeaderMobile = () => {
 
     ">
       <div className="h-full flex items-end flex-grow">
-        <h1 className="text-4xl font-title font-black tracking-tighter antialiased">
+        <h1 className="text-4xl font-title font-black tracking-tighter antialiased mb-1">
           <Link to="/">Koheybase</Link>
         </h1>
 
