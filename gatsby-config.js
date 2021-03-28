@@ -4,8 +4,12 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "koheybase-v2",
+    title: "Koheybase",
+    description: "UIデザイナー 青山広平のポートフォリオ",
+    author: "Kohey Aoyama",
     siteUrl: "https://koheybase.com",
+    url: "https://koheybase.com",
+    ogpImage: "/twitter_card_large.png"
   },
   plugins: [
     "gatsby-plugin-image",
