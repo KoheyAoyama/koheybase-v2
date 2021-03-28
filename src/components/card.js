@@ -13,7 +13,10 @@ const Card = ({ data }) => {
           image={thumbnail}
           className="md:hover:shadow-lg"
         />
-        <div className="px-3 py-2">
+        <div className="
+          px-3 py-2
+          md:px-0.5
+        ">
           <p className="font-bold px-0.5 mb-1 text-gray-600">{data.title}</p>
           <div className="flex flex-wrap">
             {data.genre.map((genre, index) => (
