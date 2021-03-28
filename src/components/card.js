@@ -13,11 +13,15 @@ const Card = ({ data }) => {
           image={thumbnail}
           className="md:hover:shadow-lg"
         />
-        <div className="px-3">
-          <p className="text-lg font-bold">{data.title}</p>
-          {data.genre.map((genre, index) => (
-            <Tag key={index}>{genre}</Tag>
-          ))}
+        <div className="px-4 py-2">
+          <p className="text-lg font-normal mb-1 text-gray-600">{data.title}</p>
+          <div className="flex flex-wrap">
+            {data.genre.map((genre, index) => (
+              <div className="mr-2 mb-1">
+                <Tag key={index}>{genre}</Tag>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </Link>
