@@ -19,11 +19,15 @@ const Article = props => {
             className="md:mx-4"
           />
           <div className="px-4 my-6">
-            <p className="font-bold mb-2">{content.period}</p>
-            <h1 className="pb-2 text-3xl">{content.title}</h1>
-            {content.genre.map((genre, index) => (
-              <Tag key={index}>{genre}</Tag>
-            ))}
+            <p className="text-xl font-normal text-gray-400 mb-1">{content.period}</p>
+            <h1 className="pb-2 text-3xl font-bold">{content.title}</h1>
+            <div className="mt-3">
+              {content.genre.map((genre, index) => (
+                <span className="mr-2 mb-1">
+                  <Tag key={index}>{genre}</Tag>
+                </span>
+              ))}
+            </div>
           </div>
           {renderRichText(content.content, options)}
         </div>
@@ -35,7 +39,7 @@ const options = {
   renderNode: {
     [BLOCKS.DOCUMENT]: (node, children) => {
       return (
-        <div key={node} className="text-lg flex flex-col space-y-6">{children}</div>
+        <div key={node} className="flex flex-col space-y-6 leading-loose">{children}</div>
       )
     },
     [BLOCKS.PARAGRAPH]: (node, children) => {
@@ -50,27 +54,17 @@ const options = {
     },
     [BLOCKS.HEADING_2]: (node, children) => {
       return (
-        <h2 key={node} className="text-2xl px-4">{children}</h2>
+        <h2 key={node} className="text-lg font-bold px-4">{children}</h2>
       )
     },
     [BLOCKS.HEADING_3]: (node, children) => {
       return (
-        <h3 key={node} className="text-xl font-bold px-4">{children}</h3>
+        <h3 key={node} className="font-bold px-4">{children}</h3>
       )
     },
     [BLOCKS.HEADING_4]: (node, children) => {
       return (
-        <h4 key={node} className="text-lg font-bold px-4">{children}</h4>
-      )
-    },
-    [BLOCKS.HEADING_5]: (node, children) => {
-      return (
-        <h5 key={node} className="text-base font-bold px-4">{children}</h5>
-      )
-    },
-    [BLOCKS.HEADING_6]: (node, children) => {
-      return (
-        <h6 key={node} className="text-sm font-bold px-4">{children}</h6>
+        <h4 key={node} className="px-4 text-gray-400">{children}</h4>
       )
     },
     [BLOCKS.UL_LIST]: (node, children) => {
@@ -80,16 +74,16 @@ const options = {
             child.props.children.map((child) => (
               <li css={css`
                 position: relative;
-                margin-left: 8px;
+                margin-left: 4px;
                 &:before {
                   position: absolute;
-                  top: 50%;
-                  left: -4px;
+                  top: 16px;
+                  left: -2px;
                   content: '';
                   transform: translateY(-50%);
                   -webkit-transform: translateY(-50%);
-                  height: 6px;
-                  width: 6px;
+                  height: 4px;
+                  width: 4px;
                   border-radius: 999px;
                   background: #333333;
                   content: "";
