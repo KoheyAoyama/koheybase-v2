@@ -29,15 +29,15 @@ const AboutMe = () => {
 
           <div className="mb-12">
             <h2 className="text-2xl font-bold mb-4">スキル</h2>
-            <div>
-              <Tag>UIデザイン</Tag>
-              <Tag>UXデザイン</Tag>
-              <Tag>情報設計</Tag>
-              <Tag>Webデザイン</Tag>
-              <Tag>WordPress</Tag>
-              <Tag>Gatsby.js</Tag>
-              <Tag>HTML5</Tag>
-              <Tag>CSS3</Tag>
+            <div className="flex flex-wrap">
+              <div className="mr-2 mb-1"><Tag>UIデザイン</Tag></div>
+              <div className="mr-2 mb-1"><Tag>UXデザイン</Tag></div>
+              <div className="mr-2 mb-1"><Tag>情報設計</Tag></div>
+              <div className="mr-2 mb-1"><Tag>Webデザイン</Tag></div>
+              <div className="mr-2 mb-1"><Tag>WordPress</Tag></div>
+              <div className="mr-2 mb-1"><Tag>Gatsby.js</Tag></div>
+              <div className="mr-2 mb-1"><Tag>HTML5</Tag></div>
+              <div className="mr-2 mb-1"><Tag>CSS3</Tag></div>
             </div>
           </div>
 

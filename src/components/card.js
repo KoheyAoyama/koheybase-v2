@@ -14,7 +14,7 @@ const Card = ({ data }) => {
           className="md:hover:shadow-lg"
         />
         <div className="px-4 py-2">
-          <p className="text-lg font-normal mb-1 text-gray-600">{data.title}</p>
+          <p className="font-bold mb-1 text-gray-600">{data.title}</p>
           <div className="flex flex-wrap">
             {data.genre.map((genre, index) => (
               <div className="mr-2 mb-1">
