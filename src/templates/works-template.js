@@ -150,7 +150,7 @@ export const query = graphql`
           ... on ContentfulAsset {
             __typename
             contentful_id
-            gatsbyImageData
+            gatsbyImageData(placeholder: BLURRED)
             file {
               url
             }

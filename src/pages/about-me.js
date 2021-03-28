@@ -15,7 +15,8 @@ const AboutMe = () => {
             md:ml-4 md:w-96
           "
           src="../images/img-my-profile.png"
-          //aspectRatio={1/2}
+          placeholder="blurred"
+          aspectRatio={1}
         />
 
         <div className="px-4">
