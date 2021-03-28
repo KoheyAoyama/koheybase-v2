@@ -34,7 +34,7 @@ query indexPageQuery {
         genre
         period
         thumbnail {
-          gatsbyImageData
+          gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH, aspectRatio: 2.0)
         }
       }
     }
