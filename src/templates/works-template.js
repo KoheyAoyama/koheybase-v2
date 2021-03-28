@@ -77,7 +77,7 @@ const options = {
                 margin-left: 4px;
                 &:before {
                   position: absolute;
-                  top: 50%;
+                  top: 16px;
                   left: -2px;
                   content: '';
                   transform: translateY(-50%);
