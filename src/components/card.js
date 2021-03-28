@@ -18,11 +18,11 @@ const Card = ({ data }) => {
           md:px-0.5
         ">
           <p className="font-bold px-0.5 text-gray-600">{data.title}</p>
-          <div className="flex flex-wrap">
+          <div>
             {data.genre.map((genre, index) => (
-              <div className="mr-2 mb-1">
+              <span className="mr-2 mb-1">
                 <Tag key={index}>{genre}</Tag>
-              </div>
+              </span>
             ))}
           </div>
         </div>

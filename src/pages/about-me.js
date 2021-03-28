@@ -29,20 +29,20 @@ const AboutMe = () => {
 
           <div className="mb-12">
             <h2 className="text-lg font-bold mb-4">スキル</h2>
-            <div className="flex flex-wrap ml-0.5">
-              <div className="mr-2 mb-1"><Tag>UIデザイン</Tag></div>
-              <div className="mr-2 mb-1"><Tag>UXデザイン</Tag></div>
-              <div className="mr-2 mb-1"><Tag>情報設計</Tag></div>
-              <div className="mr-2 mb-1"><Tag>Webデザイン</Tag></div>
-              <div className="mr-2 mb-1"><Tag>Figma</Tag></div>
-              <div className="mr-2 mb-1"><Tag>Sketch</Tag></div>
-              <div className="mr-2 mb-1"><Tag>WordPress</Tag></div>
-              <div className="mr-2 mb-1"><Tag>Gatsby.js</Tag></div>
-              <div className="mr-2 mb-1"><Tag>React.js</Tag></div>
-              <div className="mr-2 mb-1"><Tag>HTML5</Tag></div>
-              <div className="mr-2 mb-1"><Tag>CSS3</Tag></div>
-              <div className="mr-2 mb-1"><Tag>SQL</Tag></div>
-              <div className="mr-2 mb-1"><Tag>Netlify</Tag></div>
+            <div className="ml-0.5">
+              <span className="mr-2 mb-1"><Tag>UIデザイン</Tag></span>
+              <span className="mr-2 mb-1"><Tag>UXデザイン</Tag></span>
+              <span className="mr-2 mb-1"><Tag>情報設計</Tag></span>
+              <span className="mr-2 mb-1"><Tag>Webデザイン</Tag></span>
+              <span className="mr-2 mb-1"><Tag>Figma</Tag></span>
+              <span className="mr-2 mb-1"><Tag>Sketch</Tag></span>
+              <span className="mr-2 mb-1"><Tag>WordPress</Tag></span>
+              <span className="mr-2 mb-1"><Tag>Gatsby.js</Tag></span>
+              <span className="mr-2 mb-1"><Tag>React.js</Tag></span>
+              <span className="mr-2 mb-1"><Tag>HTML5</Tag></span>
+              <span className="mr-2 mb-1"><Tag>CSS3</Tag></span>
+              <span className="mr-2 mb-1"><Tag>SQL</Tag></span>
+              <span className="mr-2 mb-1"><Tag>Netlify</Tag></span>
             </div>
           </div>
 
