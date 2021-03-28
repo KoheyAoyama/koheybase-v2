@@ -17,7 +17,7 @@ const Card = ({ data }) => {
           px-3 py-2
           md:px-0.5
         ">
-          <p className="font-bold px-0.5 mb-1 text-gray-600">{data.title}</p>
+          <p className="font-bold px-0.5 text-gray-600">{data.title}</p>
           <div className="flex flex-wrap">
             {data.genre.map((genre, index) => (
               <div className="mr-2 mb-1">
