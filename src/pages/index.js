@@ -6,14 +6,20 @@ import Card from "../components/card"
 const IndexPage = ({ data }) => {
   return (
     <Scaffold>
-      <div className="w-screen flex flex-col">
-        <div className="mb-12 px-4">
+      <div className="
+        w-screen flex flex-col
+        md:grid md:grod-cols-4 md:grid-flow-row md:gap-4
+      ">
+        <div className="
+          mb-12 px-4
+          md:col-start-1 md:col-end-2
+        ">
           <p>青山広平</p>
           <p>東京を拠点とするUIデザイナー</p>
         </div>
 
         <div className="
-          md:grid md:grid-cols-3 md:grid-flow-row md:gap-4 md:px-4
+          md:grid md:grid-cols-3 md:grid-flow-row md:gap-4 md:px-4 md:col-start-2 md:col-end-auto md:mt-9
         ">
           {data.allContentfulWorks.edges.map(({ node }, index) => (
             <div className="mb-8">
