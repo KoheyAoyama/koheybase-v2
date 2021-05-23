@@ -63,7 +63,6 @@ const Head = ({ description, lang, meta, title, postThumbnail }) => {
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Noto+Sans+JP:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
-      <script src="https://kit.fontawesome.com/8f9e897dc3.js" crossorigin="anonymous"></script>
     </Helmet>
   )
 }

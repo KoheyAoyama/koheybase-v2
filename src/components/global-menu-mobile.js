@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
-import { urlFacebook, urlGitHub } from "../utils/constants"
+import { urlYoutrust, urlFacebook, urlGitHub } from "../utils/constants"
 
 const GlobalMenuMobile = () => {
 
@@ -29,7 +29,11 @@ const GlobalMenuMobile = () => {
               <a
               className="inline-block w-full h-16 px-3 flex items-center"
               href="/">
-                <span className="w-10 mr-3 flex justify-center" style={{ fontSize: '24px' }}><i class="fas fa-home"></i></span>
+                <span
+                  className="w-10 mr-3 flex justify-center"
+                >
+                  <img src="/ic/ic-koheybase.png" alt="Icon, Koheybase" className="w-6 h-6" />
+                </span>
                 Home
               </a>
             </li>
@@ -38,9 +42,26 @@ const GlobalMenuMobile = () => {
               to="/about-me/"
               className="inline-block w-full h-16 px-3 flex items-center"
               >
-                <span className="w-10 mr-3 flex justify-center" style={{ fontSize: '24px' }}><i class="fas fa-user"></i></span>
+                <span className="w-10 mr-3 flex justify-center">
+                  <img src="/ic/ic-profile.png" alt="Icon, Profile" className="w-6 h-6" />
+                </span>
                 About Me
               </Link>
+            </li>
+            <li className="w-full">
+              <a
+              href={urlYoutrust}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block w-full h-16 px-3 flex items-center"
+              >
+                <span
+                  className="w-10 mr-3 flex justify-center"
+                >
+                  <img src="/ic/ic-youtrust.png" alt="Icon, YOUTRUST" className="w-6 h-6" />
+                </span>
+                YOUTRUST
+              </a>
             </li>
             <li className="w-full">
               <a
@@ -49,7 +70,9 @@ const GlobalMenuMobile = () => {
               rel="noopener noreferrer"
               className="inline-block w-full h-16 px-3 flex items-center"
               >
-                <span className="w-10 mr-3 flex justify-center" style={{ fontSize: '24px' }}><i class="fab fa-facebook-messenger"></i></span>
+                <span className="w-10 mr-3 flex justify-center">
+                  <img src="/ic/ic-messenger.png" alt="Icon, Facebook Messenger" className="w-6 h-6" />
+                </span>
                 Messenger
               </a>
             </li>
@@ -60,8 +83,10 @@ const GlobalMenuMobile = () => {
               rel="noopener noreferrer"
               className="inline-block w-full h-16 px-3 flex items-center"
               >
-                <span className="w-10 mr-3 flex justify-center" style={{ fontSize: '24px' }}><i class="fab fa-github"></i></span>
-                Github
+                <span className="w-10 mr-3 flex justify-center">
+                  <img src="/ic/ic-github.png" alt="Icon, GitHub" className="w-6 h-6" />
+                </span>
+                GitHub
               </a>
             </li>
           </ul>

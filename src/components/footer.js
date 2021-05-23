@@ -1,5 +1,5 @@
 import React from 'react'
-import { urlFacebook, urlGitHub } from "../utils/constants"
+import { urlYoutrust, urlFacebook, urlGitHub } from "../utils/constants"
 
 const FooterMobile = () => {
   return (
@@ -10,24 +10,34 @@ const FooterMobile = () => {
           話しかける
         </p>
         <div className="flex">
-          <span>
+          <span className="flex items-center">
+            <a
+              href={urlYoutrust}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-5 flex items-center"
+              >
+                <img src="/ic/ic-youtrust.png" alt="Icon, YOUTRUST" className="w-12" />
+            </a>
+          </span>
+          <span className="flex items-center">
             <a
               href={urlFacebook}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-5 flex items-center"
               >
-                <span style={{ fontSize: '44px' }}><i class="fab fa-facebook-messenger"></i></span>
+                <img src="/ic/ic-messenger.png" alt="Icon, Messegner" className="w-12" />
             </a>
           </span>
-          <span>
+          <span className="flex items-center">
             <a
               href={urlGitHub}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-5 flex items-center"
               >
-                <span style={{ fontSize: '44px' }}><i class="fab fa-github"></i></span>
+                <img src="/ic/ic-github.png" alt="Icon, GitHub" className="w-12" />
             </a>
           </span>
         </div>

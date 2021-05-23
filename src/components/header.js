@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { urlFacebook, urlGitHub } from "../utils/constants"
+import { urlYoutrust, urlFacebook, urlGitHub } from "../utils/constants"
 
 const HeaderMobile = () => {
   return (
@@ -32,12 +32,30 @@ const HeaderMobile = () => {
             </li>
             <li>
               <a
+              href={urlYoutrust}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block h-9 px-4 flex items-center"
+              >
+                <span
+                  className="flex items-center"
+                >
+                  <img src="/ic/ic-youtrust.png" alt="Icon, YOUTRUST" className="w-6" />
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
               href={urlFacebook}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block h-9 px-4 flex items-center"
               >
-                <span style={{ fontSize: '20px' }}><i class="fab fa-facebook-messenger"></i></span>
+                <span
+                  className="flex items-center"
+                >
+                  <img src="/ic/ic-messenger.png" alt="Icon, Facebook Messenger" className="w-6" />
+                </span>
               </a>
             </li>
             <li>
@@ -47,7 +65,11 @@ const HeaderMobile = () => {
               rel="noopener noreferrer"
               className="inline-block h-9 px-4 flex items-center"
               >
-                <span style={{ fontSize: '20px' }}><i class="fab fa-github"></i></span>
+                <span
+                  className="flex items-center"
+                >
+                  <img src="/ic/ic-github.png" alt="Icon, GitHub" className="w-6" />
+                </span>
               </a>
             </li>
           </ul>
