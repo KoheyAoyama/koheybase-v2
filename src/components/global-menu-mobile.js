@@ -112,7 +112,7 @@ const GlobalMenuMobile = () => {
                     height={24}
                   />
                 </span>
-                Messenger
+                GitHub
               </a>
             </li>
           </ul>
