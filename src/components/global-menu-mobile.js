@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
-import { urlFacebook, urlGitHub } from "../utils/constants"
+import { StaticImage } from "gatsby-plugin-image"
+import { urlYoutrust, urlFacebook, urlGitHub } from "../utils/constants"
 
 const GlobalMenuMobile = () => {
 
@@ -44,24 +45,58 @@ const GlobalMenuMobile = () => {
             </li>
             <li className="w-full">
               <a
+              href={urlYoutrust}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block w-full h-16 px-3 flex items-center"
+              >
+                <span
+                  className="w-10 mr-3 flex justify-center"
+                >
+                  <StaticImage
+                    src="../images/ic-youtrust.png"
+                    alt="YouTrust brand icon"
+                    width={24}
+                    height={24}
+                  />
+                </span>
+                YOUTRUST
+              </a>
+            </li>
+            <li className="w-full">
+              <a
               href={urlFacebook}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block w-full h-16 px-3 flex items-center"
               >
-                <span className="w-10 mr-3 flex justify-center" style={{ fontSize: '24px' }}><i class="fab fa-facebook-messenger"></i></span>
+                <span className="w-10 mr-3 flex justify-center">
+                  <StaticImage
+                    src="../images/ic-messenger.png"
+                    alt="Facebook Messenger brand icon"
+                    width={24}
+                    height={24}
+                  />
+                </span>
                 Messenger
               </a>
             </li>
             <li className="w-full">
               <a
-              href={urlGitHub}
+              href={urlFacebook}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block w-full h-16 px-3 flex items-center"
               >
-                <span className="w-10 mr-3 flex justify-center" style={{ fontSize: '24px' }}><i class="fab fa-github"></i></span>
-                Github
+                <span className="w-10 mr-3 flex justify-center">
+                  <StaticImage
+                    src="../images/ic-github.png"
+                    alt="GitHub brand icon"
+                    width={24}
+                    height={24}
+                  />
+                </span>
+                Messenger
               </a>
             </li>
           </ul>

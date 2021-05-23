@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { urlFacebook, urlGitHub } from "../utils/constants"
+import { StaticImage } from 'gatsby-plugin-image'
+import { urlYoutrust, urlFacebook, urlGitHub } from "../utils/constants"
 
 const HeaderMobile = () => {
   return (
@@ -37,7 +38,16 @@ const HeaderMobile = () => {
               rel="noopener noreferrer"
               className="inline-block h-9 px-4 flex items-center"
               >
-                <span style={{ fontSize: '20px' }}><i class="fab fa-facebook-messenger"></i></span>
+                <span
+                  class="flex items-center"
+                >
+                  <StaticImage
+                    src="../images/ic-youtrust.png"
+                    alt="YouTrust brand icon"
+                    width={24}
+                    height={24}
+                  />
+                </span>
               </a>
             </li>
             <li>
@@ -47,7 +57,16 @@ const HeaderMobile = () => {
               rel="noopener noreferrer"
               className="inline-block h-9 px-4 flex items-center"
               >
-                <span style={{ fontSize: '20px' }}><i class="fab fa-facebook-messenger"></i></span>
+                <span
+                  class="flex items-center"
+                >
+                  <StaticImage
+                    src="../images/ic-messenger.png"
+                    alt="Facebook Messenger brand icon"
+                    width={24}
+                    height={24}
+                  />
+                </span>
               </a>
             </li>
             <li>
@@ -57,7 +76,16 @@ const HeaderMobile = () => {
               rel="noopener noreferrer"
               className="inline-block h-9 px-4 flex items-center"
               >
-                <span style={{ fontSize: '20px' }}><i class="fab fa-github"></i></span>
+                <span
+                  class="flex items-center"
+                >
+                  <StaticImage
+                    src="../images/ic-github.png"
+                    alt="GitHub brand icon"
+                    width={24}
+                    height={24}
+                  />
+                </span>
               </a>
             </li>
           </ul>
