@@ -39,7 +39,7 @@ const HeaderMobile = () => {
               className="inline-block h-9 px-4 flex items-center"
               >
                 <span
-                  class="flex items-center"
+                  className="flex items-center"
                 >
                   <StaticImage
                     src="../images/ic-youtrust.png"
@@ -58,7 +58,7 @@ const HeaderMobile = () => {
               className="inline-block h-9 px-4 flex items-center"
               >
                 <span
-                  class="flex items-center"
+                  className="flex items-center"
                 >
                   <StaticImage
                     src="../images/ic-messenger.png"
@@ -77,7 +77,7 @@ const HeaderMobile = () => {
               className="inline-block h-9 px-4 flex items-center"
               >
                 <span
-                  class="flex items-center"
+                  className="flex items-center"
                 >
                   <StaticImage
                     src="../images/ic-github.png"

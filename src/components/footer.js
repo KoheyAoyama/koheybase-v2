@@ -11,26 +11,24 @@ const FooterMobile = () => {
           話しかける
         </p>
         <div className="flex">
-          <span>
+          <span className="flex items-center">
             <a
               href={urlFacebook}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-5 flex items-center"
               >
-                <span style={{ fontSize: '44px' }}>
-                  <StaticImage src="../images/ic-messenger.png" />
-                </span>
+                <StaticImage src="../images/ic-messenger.png" width={48} height={48} />
             </a>
           </span>
-          <span>
+          <span className="flex items-center">
             <a
               href={urlGitHub}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-5 flex items-center"
               >
-                <span style={{ fontSize: '44px' }}><i class="fab fa-github"></i></span>
+                <StaticImage src="../images/ic-github.png" width={48} height={48} />
             </a>
           </span>
         </div>
