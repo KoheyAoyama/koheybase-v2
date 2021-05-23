@@ -1,6 +1,6 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
-import { urlFacebook, urlGitHub } from "../utils/constants"
+import { urlYoutrust, urlFacebook, urlGitHub } from "../utils/constants"
 
 const FooterMobile = () => {
   return (
@@ -11,6 +11,16 @@ const FooterMobile = () => {
           話しかける
         </p>
         <div className="flex">
+          <span className="flex items-center">
+            <a
+              href={urlYoutrust}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-5 flex items-center"
+              >
+                <StaticImage src="../images/ic-youtrust.png" width={48} height={48} />
+            </a>
+          </span>
           <span className="flex items-center">
             <a
               href={urlFacebook}
