@@ -40,23 +40,23 @@ const Head = ({ description, lang, meta, title, postThumbnail }) => {
           content: metaDescription,
         },
         {
-          name: `og:image`,
+          property: `og:image`,
           content: OGPImage,
         },
         {
-          name: `og:url`,
+          property: `og:url`,
           content: siteURL,
         },
         {
-          name: `og:type`,
+          property: `og:type`,
           content: 'website',
         },
         {
-          name: `og:title`,
+          property: `og:title`,
           content: metaTitle,
         },
         {
-          name: `og:description`,
+          property: `og:description`,
           content: metaDescription,
         },
         {
