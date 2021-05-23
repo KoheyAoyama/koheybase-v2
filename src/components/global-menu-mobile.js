@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 import { urlYoutrust, urlFacebook, urlGitHub } from "../utils/constants"
 
 const GlobalMenuMobile = () => {
@@ -33,12 +32,7 @@ const GlobalMenuMobile = () => {
                 <span
                   className="w-10 mr-3 flex justify-center"
                 >
-                  <StaticImage
-                    src="../images/ic-koheybase.png"
-                    alt="Koheybase logo"
-                    width={24}
-                    height={24}
-                  />
+                  <img src="/ic/ic-koheybase.png" alt="Icon, Koheybase" className="w-6" />
                 </span>
                 Home
               </a>
@@ -49,12 +43,7 @@ const GlobalMenuMobile = () => {
               className="inline-block w-full h-16 px-3 flex items-center"
               >
                 <span className="w-10 mr-3 flex justify-center">
-                  <StaticImage
-                    src="../images/ic-profile.png"
-                    alt="Profile icon"
-                    width={24}
-                    height={24}
-                  />
+                  <img src="/ic/ic-profile.png" alt="Icon, Profile" className="w-6" />
                 </span>
                 About Me
               </Link>
@@ -69,12 +58,7 @@ const GlobalMenuMobile = () => {
                 <span
                   className="w-10 mr-3 flex justify-center"
                 >
-                  <StaticImage
-                    src="../images/ic-youtrust.png"
-                    alt="YouTrust brand icon"
-                    width={24}
-                    height={24}
-                  />
+                  <img src="/ic/ic-youtrust.png" alt="Icon, YOUTRUST" className="w-6" />
                 </span>
                 YOUTRUST
               </a>
@@ -87,12 +71,7 @@ const GlobalMenuMobile = () => {
               className="inline-block w-full h-16 px-3 flex items-center"
               >
                 <span className="w-10 mr-3 flex justify-center">
-                  <StaticImage
-                    src="../images/ic-messenger.png"
-                    alt="Facebook Messenger brand icon"
-                    width={24}
-                    height={24}
-                  />
+                  <img src="/ic/ic-messenger.png" alt="Icon, Facebook Messenger" className="w-6" />
                 </span>
                 Messenger
               </a>
@@ -105,12 +84,7 @@ const GlobalMenuMobile = () => {
               className="inline-block w-full h-16 px-3 flex items-center"
               >
                 <span className="w-10 mr-3 flex justify-center">
-                  <StaticImage
-                    src="../images/ic-github.png"
-                    alt="GitHub brand icon"
-                    width={24}
-                    height={24}
-                  />
+                  <img src="/ic/ic-github.png" alt="Icon, GitHub" className="w-6" />
                 </span>
                 GitHub
               </a>
