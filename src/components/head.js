@@ -23,7 +23,8 @@ const Head = ({ description, lang, meta, title, postThumbnail }) => {
 
   const metaDescription = description || site.siteMetadata.description
   const metaTitle = title || site.siteMetadata.title
-  const twitterCardImage = postThumbnail || `${site.siteMetadata.siteUrl}${site.siteMetadata.ogpImage}`
+  const OGPImage = postThumbnail || `${site.siteMetadata.siteUrl}${site.siteMetadata.ogpImage}`
+  const siteURL = site.siteMetadata.siteUrl
 
   return (
     <Helmet
@@ -36,6 +37,26 @@ const Head = ({ description, lang, meta, title, postThumbnail }) => {
       meta={[
         {
           name: `description`,
+          content: metaDescription,
+        },
+        {
+          name: `og:image`,
+          content: OGPImage,
+        },
+        {
+          name: `og:url`,
+          content: siteURL,
+        },
+        {
+          name: `og:type`,
+          content: 'website',
+        },
+        {
+          name: `og:title`,
+          content: metaTitle,
+        },
+        {
+          name: `og:description`,
           content: metaDescription,
         },
         {
@@ -56,7 +77,7 @@ const Head = ({ description, lang, meta, title, postThumbnail }) => {
         },
         {
           name: `twitter:image`,
-          content: twitterCardImage,
+          content: OGPImage,
         },
       ].concat(meta)}
     >
