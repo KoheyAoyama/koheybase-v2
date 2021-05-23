@@ -83,7 +83,7 @@ const GlobalMenuMobile = () => {
             </li>
             <li className="w-full">
               <a
-              href={urlFacebook}
+              href={urlGitHub}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block w-full h-16 px-3 flex items-center"

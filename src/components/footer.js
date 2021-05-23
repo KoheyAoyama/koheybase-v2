@@ -1,4 +1,5 @@
 import React from 'react'
+import { StaticImage } from 'gatsby-plugin-image'
 import { urlFacebook, urlGitHub } from "../utils/constants"
 
 const FooterMobile = () => {
@@ -17,7 +18,9 @@ const FooterMobile = () => {
               rel="noopener noreferrer"
               className="inline-block px-5 flex items-center"
               >
-                <span style={{ fontSize: '44px' }}><i class="fab fa-facebook-messenger"></i></span>
+                <span style={{ fontSize: '44px' }}>
+                  <StaticImage src="../images/ic-messenger.png" />
+                </span>
             </a>
           </span>
           <span>
