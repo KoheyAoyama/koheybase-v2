@@ -1,5 +1,4 @@
 import React from 'react'
-import { StaticImage } from 'gatsby-plugin-image'
 import { urlYoutrust, urlFacebook, urlGitHub } from "../utils/constants"
 
 const FooterMobile = () => {
@@ -18,7 +17,7 @@ const FooterMobile = () => {
               rel="noopener noreferrer"
               className="inline-block px-5 flex items-center"
               >
-                <StaticImage src="../images/ic-youtrust.png" width={48} height={48} />
+                <img src="/ic/ic-youtrust.png" alt="Icon, YOUTRUST" className="w-12" />
             </a>
           </span>
           <span className="flex items-center">
@@ -28,7 +27,7 @@ const FooterMobile = () => {
               rel="noopener noreferrer"
               className="inline-block px-5 flex items-center"
               >
-                <StaticImage src="../images/ic-messenger.png" width={48} height={48} />
+                <img src="/ic/ic-messenger.png" alt="Icon, Messegner" className="w-12" />
             </a>
           </span>
           <span className="flex items-center">
@@ -38,7 +37,7 @@ const FooterMobile = () => {
               rel="noopener noreferrer"
               className="inline-block px-5 flex items-center"
               >
-                <StaticImage src="../images/ic-github.png" width={48} height={48} />
+                <img src="/ic/ic-github.png" alt="Icon, GitHub" className="w-12" />
             </a>
           </span>
         </div>
