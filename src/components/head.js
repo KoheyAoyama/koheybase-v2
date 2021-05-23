@@ -32,7 +32,7 @@ const Head = ({ description, lang, meta, title, postThumbnail }) => {
         lang,
       }}
       title = {metaTitle}
-      titleTemplate = {`%s | ${site.siteMetadata.title}`}
+      titleTemplate = {`%s | ${site.siteMetadata.description}`}
 
       meta={[
         {
