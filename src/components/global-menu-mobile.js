@@ -30,7 +30,16 @@ const GlobalMenuMobile = () => {
               <a
               className="inline-block w-full h-16 px-3 flex items-center"
               href="/">
-                <span className="w-10 mr-3 flex justify-center" style={{ fontSize: '24px' }}><i class="fas fa-home"></i></span>
+                <span
+                  className="w-10 mr-3 flex justify-center"
+                >
+                  <StaticImage
+                    src="../images/ic-koheybase.png"
+                    alt="Koheybase logo"
+                    width={24}
+                    height={24}
+                  />
+                </span>
                 Home
               </a>
             </li>
@@ -39,7 +48,14 @@ const GlobalMenuMobile = () => {
               to="/about-me/"
               className="inline-block w-full h-16 px-3 flex items-center"
               >
-                <span className="w-10 mr-3 flex justify-center" style={{ fontSize: '24px' }}><i class="fas fa-user"></i></span>
+                <span className="w-10 mr-3 flex justify-center">
+                  <StaticImage
+                    src="../images/ic-profile.png"
+                    alt="Profile icon"
+                    width={24}
+                    height={24}
+                  />
+                </span>
                 About Me
               </Link>
             </li>
