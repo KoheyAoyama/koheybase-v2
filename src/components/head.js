@@ -60,6 +60,10 @@ const Head = ({ description, lang, meta, title, postThumbnail }) => {
           content: metaDescription,
         },
         {
+          property: `fb:app_id`,
+          content: '',
+        },
+        {
           name: `twitter:card`,
           content: 'summary_large_image',
         },
