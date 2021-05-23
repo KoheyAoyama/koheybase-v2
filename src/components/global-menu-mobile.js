@@ -32,7 +32,7 @@ const GlobalMenuMobile = () => {
                 <span
                   className="w-10 mr-3 flex justify-center"
                 >
-                  <img src="/ic/ic-koheybase.png" alt="Icon, Koheybase" className="w-6" />
+                  <img src="/ic/ic-koheybase.png" alt="Icon, Koheybase" className="w-6 h-6" />
                 </span>
                 Home
               </a>
@@ -43,7 +43,7 @@ const GlobalMenuMobile = () => {
               className="inline-block w-full h-16 px-3 flex items-center"
               >
                 <span className="w-10 mr-3 flex justify-center">
-                  <img src="/ic/ic-profile.png" alt="Icon, Profile" className="w-6" />
+                  <img src="/ic/ic-profile.png" alt="Icon, Profile" className="w-6 h-6" />
                 </span>
                 About Me
               </Link>
@@ -58,7 +58,7 @@ const GlobalMenuMobile = () => {
                 <span
                   className="w-10 mr-3 flex justify-center"
                 >
-                  <img src="/ic/ic-youtrust.png" alt="Icon, YOUTRUST" className="w-6" />
+                  <img src="/ic/ic-youtrust.png" alt="Icon, YOUTRUST" className="w-6 h-6" />
                 </span>
                 YOUTRUST
               </a>
@@ -71,7 +71,7 @@ const GlobalMenuMobile = () => {
               className="inline-block w-full h-16 px-3 flex items-center"
               >
                 <span className="w-10 mr-3 flex justify-center">
-                  <img src="/ic/ic-messenger.png" alt="Icon, Facebook Messenger" className="w-6" />
+                  <img src="/ic/ic-messenger.png" alt="Icon, Facebook Messenger" className="w-6 h-6" />
                 </span>
                 Messenger
               </a>
@@ -84,7 +84,7 @@ const GlobalMenuMobile = () => {
               className="inline-block w-full h-16 px-3 flex items-center"
               >
                 <span className="w-10 mr-3 flex justify-center">
-                  <img src="/ic/ic-github.png" alt="Icon, GitHub" className="w-6" />
+                  <img src="/ic/ic-github.png" alt="Icon, GitHub" className="w-6 h-6" />
                 </span>
                 GitHub
               </a>
