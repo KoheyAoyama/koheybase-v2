@@ -79,6 +79,10 @@ const Head = ({ description, lang, meta, title, postThumbnail }) => {
           name: `twitter:image`,
           content: OGPImage,
         },
+        {
+          name: `robots`,
+          content: 'noindex',
+        },
       ].concat(meta)}
     >
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
